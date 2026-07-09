@@ -1,0 +1,11 @@
+
+
+{"code": "InvalidTemplateDeployment", "message": "The template deployment 'main' is not valid according to the validation procedure. The following resource provider(s) - 'Microsoft.Web/serverFarms (2025-03-01)' reported preflight validation errors. Tracking id is 'fc250cd4-bca7-4d89-8a5c-cac2275b2c0c'. See inner errors for details."}
+
+Inner Errors: 
+{"code": "ValidationForResourceFailed", "message": "Validation failed for a resource. Check 'Error.Details[0]' for more information."}
+
+Inner Errors: 
+{"code": "SubscriptionIsOverQuotaForSku", "message": "Operation cannot be completed without additional quota. \r\nAdditional details - Location:  \r\nCurrent Limit (Total VMs): 0 \r\nCurrent Usage: 0\r\nAmount required for this deployment (Total VMs): 1 \r\n(Minimum) New Limit that you should request to enable this deployment: 1. \r\nNote that if you experience multiple scaling operations failing (in addition to this one) and need to accommodate the aggregate quota requirements of these operations, you will need to request a higher quota limit than the one currently displayed."}
+
+az vm list-skus --location uksouth --zone --all --output table
