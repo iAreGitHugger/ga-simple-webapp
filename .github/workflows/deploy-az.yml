@@ -62,4 +62,4 @@ jobs:
 #       - name: Build and deploy Azure resources
 #         run: |
 #           bicep build azure-resources.bicep
-#           az deployment sub create --name myDeployment --location ukwest --template-file ./azure-resources.json
+#           az deployment sub create --name myDeployment --location ukwest --template-file ./az-res.bicep
